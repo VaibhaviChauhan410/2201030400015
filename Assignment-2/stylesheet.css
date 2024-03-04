@@ -1,0 +1,230 @@
+.first-frame-child {
+    width: 1016px;
+    height: 526px;
+    position: relative;
+    background-color: var(--color-darkolivegreen);
+    display: none;
+    max-width: 100%;
+  }
+  .photo-frame,
+  .username {
+    position: relative;
+    z-index: 1;
+  }
+  .username {
+    height: 64px;
+    width: 314px;
+    display: inline-block;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .photo-frame {
+    height: 78px;
+    flex: 1;
+    border-radius: var(--br-base);
+    background-color: #f5f5f5;
+    min-width: 342px;
+    max-width: 100%;
+  }
+  .second-frame {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0 18px;
+    max-width: 100%;
+  }
+  .password,
+  .tenth-frame {
+    position: relative;
+    z-index: 1;
+  }
+  .password {
+    font-weight: 700;
+  }
+  .tenth-frame {
+    align-self: stretch;
+    height: 78px;
+    border-radius: var(--br-base);
+    background-color: var(--color-white);
+  }
+  .ninth-frame,
+  .seventh-frame {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .ninth-frame {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 2px;
+    box-sizing: border-box;
+    min-width: 342px;
+  }
+  .seventh-frame {
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0 37px;
+  }
+  .avataruiunicornv {
+    height: 50px;
+    width: 48px;
+    position: relative;
+    background-color: var(--color-gainsboro);
+    z-index: 1;
+  }
+  .remember-me {
+    position: relative;
+    font-weight: 700;
+    z-index: 1;
+  }
+  .thirteenth-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 20px;
+  }
+  .bgtabswitcherpx {
+    height: 50px;
+    width: 48px;
+    position: relative;
+    background-color: var(--color-gainsboro);
+    z-index: 1;
+  }
+  .need-help {
+    position: relative;
+    font-weight: 700;
+    z-index: 1;
+  }
+  .thirteenth-frame1,
+  .twelfth-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  .twelfth-frame {
+    width: 485px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 100%;
+  }
+  .eleventh-frame {
+    width: 669px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: var(--font-size-xl);
+  }
+  .eleventh-frame,
+  .fifth-frame,
+  .sixth-frame {
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .sixth-frame {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 76px 0;
+  }
+  .fifth-frame {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 var(--padding-13xl) 0 18px;
+  }
+  .desktop-2,
+  .fifth-frame,
+  .first-frame {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .first-frame {
+    width: 1016px;
+    background-color: var(--color-darkolivegreen);
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 94px 122px 64px;
+    gap: 82px 0;
+    max-width: 100%;
+    text-align: center;
+    font-size: var(--font-size-29xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  .desktop-2 {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 34px 485px;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1025px) {
+    .first-frame {
+      gap: 82px 0;
+      padding-left: var(--padding-13xl);
+      padding-right: 47px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 975px) {
+    .password,
+    .username {
+      font-size: var(--font-size-19xl);
+    }
+    .sixth-frame {
+      gap: 76px 0;
+    }
+  }
+  @media screen and (max-width: 725px) {
+    .ninth-frame,
+    .photo-frame {
+      min-width: 100%;
+    }
+    .twelfth-frame {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .first-frame {
+      gap: 82px 0;
+      padding-top: 25px;
+      padding-right: 23px;
+      padding-bottom: 79px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .password,
+    .username {
+      font-size: var(--font-size-10xl);
+    }
+    .seventh-frame {
+      gap: 0 37px;
+    }
+    .remember-me {
+      font-size: var(--font-size-base);
+    }
+    .thirteenth-frame {
+      flex-wrap: wrap;
+    }
+    .need-help {
+      font-size: var(--font-size-base);
+    }
+    .thirteenth-frame1 {
+      flex-wrap: wrap;
+    }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Music Composer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    form {
+        display: grid;
+        gap: 10px;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding-left: 30px;
+        line-height: 30px;
+        color: #555;
+    }
+    label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        transition: all 0.3s;
+    }
+    input[type="radio"]:checked + label:before {
+        background-color: #333;
+    }
+    .playlist {
+        display: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+    }
+    input[type="radio"]:checked ~ .playlist {
+        display: block;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>How are you feeling?</h1>
+    <form>
+        <input type="radio" id="happy" name="emotion" value="happy">
+        <label for="happy">Happy</label>
+        <div class="playlist" id="happyPlaylist">
+            <ul>
+                <li>Happy Song 1</li>
+                <li>Happy Song 2</li>
+                <li>Happy Song 3</li>
+            </ul>
+        </div>
+        
+        <input type="radio" id="sad" name="emotion" value="sad">
+        <label for="sad">Sad</label>
+        <div class="playlist" id="sadPlaylist">
+            <ul>
+                <li>Sad Song 1</li>
+                <li>Sad Song 2</li>
+                <li>Sad Song 3</li>
+            </ul>
+        </div>
+
+        <input type="radio" id="calm" name="emotion" value="calm">
+        <label for="calm">Calm</label>
+        <div class="playlist" id="calmPlaylist">
+            <ul>
+                <li>Calm Song 1</li>
+                <li>Calm Song 2</li>
+                <li>Calm Song 3</li>
+            </ul>
+        </div>
+
+        <input type="radio" id="energetic" name="emotion" value="energetic">
+        <label for="energetic">Energetic</label>
+        <div class="playlist" id="energeticPlaylist">
+            <ul>
+                <li>Energetic Song 1</li>
+                <li>Energetic Song 2</li>
+                <li>Energetic Song 3</li>
+            </ul>
+        </div>
+
+        <input type="radio" id="relaxed" name="emotion" value="relaxed">
+        <label for="relaxed">Relaxed</label>
+        <div class="playlist" id="relaxedPlaylist">
+            <ul>
+                <li>Relaxed Song 1</li>
+                <li>Relaxed Song 2</li>
+                <li>Relaxed Song 3</li>
+            </ul>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+</body>
+</html>
