@@ -1,0 +1,30 @@
+body{
+   background-color: darkgreen
+}
+
+.red{
+    height: 30vh;
+    width: 40vw;
+   color: white;
+    margin-top: 35vh;
+    margin-left: 30vw;
+    font-size: 35px;
+
+}
+.blue{
+    margin: 20px;
+}
+
+.pop{
+    margin: 25px;
+
+}
+.yellow{
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    text-align: center;
+    border: solid 4px blue;
+    font-size: 35px;
+    margin-left: 45vw;
+}
